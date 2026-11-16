@@ -1,0 +1,222 @@
+{
+  "1": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "sd_xl_base_1.0.safetensors"
+    },
+    "_meta": {
+      "title": "CheckpointLoaderSimple"
+    }
+  },
+  "2": {
+    "class_type": "LoraLoader",
+    "inputs": {
+      "model": [
+        1,
+        0
+      ],
+      "clip": [
+        1,
+        1
+      ],
+      "lora_name": "yong_v3.safetensors",
+      "strength_model": 0.8,
+      "strength_clip": 0.8
+    },
+    "_meta": {
+      "title": "LoraLoader"
+    }
+  },
+  "3": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        2,
+        1
+      ],
+      "text": ""
+    },
+    "_meta": {
+      "title": "CLIPTextEncode"
+    }
+  },
+  "4": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        2,
+        1
+      ],
+      "text": ""
+    },
+    "_meta": {
+      "title": "CLIPTextEncode"
+    }
+  },
+  "5": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 832,
+      "height": 1216,
+      "batch_size": 1
+    },
+    "_meta": {
+      "title": "EmptyLatentImage"
+    }
+  },
+  "6": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        2,
+        0
+      ],
+      "positive": [
+        3,
+        0
+      ],
+      "negative": [
+        4,
+        0
+      ],
+      "latent_image": [
+        5,
+        0
+      ],
+      "seed": 20260418,
+      "steps": 28,
+      "cfg": 5.5,
+      "sampler_name": "euler",
+      "scheduler": "normal",
+      "denoise": 1.0
+    },
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "7": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        6,
+        0
+      ],
+      "vae": [
+        1,
+        2
+      ]
+    },
+    "_meta": {
+      "title": "VAEDecode"
+    }
+  },
+  "8": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        7,
+        0
+      ],
+      "filename_prefix": "yong/portrait"
+    },
+    "_meta": {
+      "title": "SaveImage"
+    }
+  },
+  "9": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ref_frame.png"
+    },
+    "_meta": {
+      "title": "LoadImage"
+    }
+  },
+  "10": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        9,
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 832,
+      "height": 1216,
+      "crop": "center"
+    },
+    "_meta": {
+      "title": "ImageScale"
+    }
+  },
+  "11": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": [
+        10,
+        0
+      ],
+      "vae": [
+        1,
+        2
+      ]
+    },
+    "_meta": {
+      "title": "VAEEncode"
+    }
+  },
+  "12": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        2,
+        0
+      ],
+      "positive": [
+        3,
+        0
+      ],
+      "negative": [
+        4,
+        0
+      ],
+      "latent_image": [
+        11,
+        0
+      ],
+      "seed": 771204,
+      "steps": 24,
+      "cfg": 5.0,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 0.55
+    },
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "13": {
+    "class_type": "UpscaleModelLoader",
+    "inputs": {
+      "model_name": "4x-UltraSharp.pth"
+    },
+    "_meta": {
+      "title": "UpscaleModelLoader"
+    }
+  },
+  "14": {
+    "class_type": "ImageUpscaleWithModel",
+    "inputs": {
+      "upscale_model": [
+        13,
+        0
+      ],
+      "image": [
+        12,
+        0
+      ]
+    },
+    "_meta": {
+      "title": "ImageUpscaleWithModel"
+    }
+  }
+}

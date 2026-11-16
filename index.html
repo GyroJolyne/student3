@@ -1,29 +1,442 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<title>student3 · 网站待建设</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='8' fill='%23265d67'/%3E%3Cpath d='M14 14h20v20H14z' fill='%23e9f2f3'/%3E%3C/svg%3E">
+<!DOCTYPE html><!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Sun Nov 01 2026 21:32:20 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="omnerat-template.webflow.io" data-wf-page="69d61b912d27b4a53110043c" data-wf-site="69d61b912d27b4a531100460" lang="en"><head><meta charset="utf-8"/><title>Studio© — Portfolio</title><meta content="Studio© is a refined Webflow template crafted to showcase your work with clarity, structure, and intentional motion." name="description"/><meta content="Studio© - Webflow HTML website template" property="og:title"/><meta content="Studio© is a refined Webflow template crafted to showcase your work with clarity, structure, and intentional motion." property="og:description"/><meta content="https://cdn.prod.website-files.com/69d61b912d27b4a531100460/69e0c36503affcec815df52b_thumb.jpg" property="og:image"/><meta content="Studio© - Webflow HTML website template" name="twitter:title"/><meta content="Studio© is a refined Webflow template crafted to showcase your work with clarity, structure, and intentional motion." name="twitter:description"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Webflow" name="generator"/><link rel="stylesheet" href="assets/css/shared.css">
+<link rel="stylesheet" href="assets/css/clone.css?v=89"><link rel="stylesheet" href="assets/css/v5.css?v=2"><link rel="stylesheet" href="assets/css/v6.css?v=67"><link href="assets/img/logo-small.jpg" rel="shortcut icon" type="image/x-icon"/><link href="assets/img/logo.png" rel="apple-touch-icon"/>
+
+
+
 <style>
-:root{color-scheme:light;--ink:#183840;--muted:#5d7379;--accent:#265d67;--paper:#f3f7f7;--line:#cad9dc}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC",sans-serif;line-height:1.8}
-main{max-width:760px;margin:12vh auto;padding:36px 28px;border-top:6px solid var(--accent)}
-h1{font-size:clamp(1.7rem,5vw,2.6rem);line-height:1.3;margin:24px 0}
-p{max-width:36em}.address{overflow-wrap:anywhere;font-size:1.05rem;color:var(--accent)}
-.note{padding-top:22px;margin-top:28px;border-top:1px solid var(--line);color:var(--muted)}
-@media(max-width:600px){main{margin:7vh 16px;padding:20px 8px}}
-</style>
-</head>
-<body>
-<main>
-<p class="address">预定地址：student3.town-slacker.top</p>
-<h1>网站尚未建设</h1>
-<p>这是第 3 个独立站点的基础文件，不是已完成的个人作品集。</p>
-<p>后续在对应仓库中替换本页，上传自己的作品、简介与素材。网站内容独立维护，不需要修改主域名。</p>
-<p class="note">当前仅准备了本地文件。GitHub 仓库、Cloudflare Pages 项目、域名绑定与发布权限均需完成线上配置后，才可以对外使用。正式上线前请删除 noindex 设置。</p>
-</main>
-</body>
-</html>
+
+  html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+  
+  /* Show grid on page load (it's set to display none in Webflow) */
+.transition{ display: grid; }
+
+/* Hide grid in the editor */
+.w-editor .transition{ display: none; }
+  
+.nav-text,
+.button-text {
+  display: inline-block;
+  min-width: max-content;
+  white-space: nowrap;
+}
+</style> </head><body><div class="fixed-element"><div data-w-id="ba0931a8-980e-89d4-01ec-0d3eb268380f" style="opacity:0" class="blur-effect"></div><div data-animation="default" class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" data-w-id="9837f6c3-9169-b539-158a-ed2948b3ef44" role="banner" data-duration="400" id="Top" data-wf--navigation--variant="base"><div id="w-node-_9837f6c3-9169-b539-158a-ed2948b3ef48-48b3ef44" class="last-part"><div class="make-grid hide-mobile"><nav role="navigation" class="nav-menu w-nav-menu"><a href="index.html" class="nav-link w-inline-block w--current"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.6 12 3.2l9 7.4"/><path d="M5.6 9.6V21h12.8V9.6"/></svg><div class="nav-text">首页</div></a><a href="index.html#meet" class="nav-link w-inline-block"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M4.6 21c0-4.1 3.3-6.6 7.4-6.6s7.4 2.5 7.4 6.6"/></svg><div class="nav-text">简介</div></a><a href="index.html#works" class="nav-link w-inline-block"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.6" width="18" height="14.8" rx="2.2"/><circle cx="8.4" cy="9.8" r="1.5"/><path d="m4.4 17.2 4.8-4.4 4 3.4 3-2.6 3.8 3.4"/></svg><div class="nav-text">图集</div></a><a href="index.html#motion" class="nav-link w-inline-block"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="m10.2 9.2 4.8 2.8-4.8 2.8z"/></svg><div class="nav-text">视频</div></a><a href="index.html#lora" class="nav-link w-inline-block"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 8.6 4.8L12 12.6 3.4 7.8 12 3Z"/><path d="m3.4 13.2 8.6 4.8 8.6-4.8"/></svg><div class="nav-text">LoRA训练</div></a><a href="index.html#comfyui" class="nav-link w-inline-block"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6.2" r="2.1"/><circle cx="18" cy="9.8" r="2.1"/><circle cx="8" cy="18" r="2.1"/><path d="M8 7.4 15.9 9.1M6.9 8.2l.7 7.7M16.3 11.9l-6.5 4.3"/></svg><div class="nav-text">ComfyUI</div></a><a href="index.html#end" class="nav-link w-inline-block"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.2 16.8 16.8 7.2"/><path d="M9.6 7.2h7.2v7.2"/></svg><div class="nav-text">结尾</div></a></nav></div><div class="last-item"><div class="menu-button w-nav-button"><div data-is-ix2-target="1" class="lottie-white" data-w-id="9837f6c3-9169-b539-158a-ed2948b3ef53" data-animation-type="lottie" data-src="assets/json/hamburger-animation.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="1.5015014403440954" data-loading="eager"></div></div></div></div></div></div><div class="bgfx" aria-hidden="true">
+  <div class="bgfx__sky"></div>
+  <canvas class="bgfx__stars"></canvas>
+  <div class="bgfx__veil"></div>
+</div>
+<div class="main-content"><div class="main-hero-wrapper"><div class="hero-main"><div class="hero-image with-image hero-space" data-hero-slot="3d">
+<div class="space__camera">
+<div class="space__sky"></div>
+</div>
+<div class="space__nebula"></div>
+<div class="space__astro" aria-hidden="true"></div>
+<div class="space__vig"></div>
+</div><div class="container for-hero">
+  <div class="hero-line"><span>01 ／ 探索</span><i>ComfyUI</i><span>2026</span></div>
+  <h1 class="logo-big" data-text="ComfyUI">ComfyUI</h1>
+  <p class="hero-sub">从节点到画面 · 一套能被复现的产线</p>
+</div><div class="container absolute _100"><div class="bottom-grid"><div><h2 class="h2 _02 big">从一张图<br/>到一条产线</h2></div><div id="w-node-_3d052635-e052-89e0-c157-462c38f80e17-3110043c"><h2 class="h2 _01"><span class="hero-oneline">当模型开始听话 门槛就变成了流程</span><br/><span class="gray-color">这两年在市场里反复试 ComfyUI：节点怎么连、显存怎么省、一套流程怎么复用到不同题材。下面是从摸索到跑通的过程。</span></h2></div></div></div></div></div><div data-w-id="38d4477e-1853-8c35-ea4f-9aa9a42bb615"></div><div id="meet" class="content-effect _02">
+<div class="bio2">
+  <aside class="bio2__side">
+    <figure class="bio2__portrait"><img src="assets/img/portrait-me.jpg" alt="杨开发"></figure>
+    <div class="bio2__id">
+      <span class="bio2__kicker">PROFILE ／ 个人简介</span>
+      <h2 class="bio2__name">杨开发</h2>
+      <p class="bio2__role">ComfyUI 工作流 ／ AI 视觉</p>
+      <dl class="bio2__meta">
+        <div><dt>年龄</dt><dd>24</dd></div>
+        <div><dt>城市</dt><dd>杭州 · 可远程</dd></div>
+        <div><dt>专业</dt><dd>城乡规划（河南理工大学）</dd></div>
+        <div><dt>联系</dt><dd><a href="mailto:2640167031@qq.com">2640167031@qq.com</a></dd></div>
+      </dl>
+    </div>
+  </aside>
+
+  <div class="bio2__main">
+    <p class="bio2__lede">我把生成式视觉当成产线来做：<em>把一次性的好结果，变成任何人接手都能复现的流程。</em></p>
+
+    <section class="bio2__block">
+      <header class="bio2__bhead"><span>01 ／ 经历</span><i>2025.11 — 2026.05</i></header>
+      <h3>西安中科航遥科技有限公司 <small>AI 视觉 ／ ComfyUI 工作流</small></h3>
+      <ul class="bio2__list">
+        <li><b>建线</b>把项目素材整理成训练集，训 LoRA 锁定角色与材质，替代反复外包修图；同一套节点复用到海报、版式、角色三类题材。</li>
+        <li><b>定性</b>推出「文生图 → 局部重绘 → 放大」的固定链路：模型、显存、步数、随机种子全部标注，换人也能跑出同样结果。</li>
+        <li><b>交付</b>为团队写下可交接的工作流文档，把口口相传的手感变成可培训的规范。</li>
+      </ul>
+    </section>
+
+    <section class="bio2__block">
+      <header class="bio2__bhead"><span>02 ／ 工具</span><i>按日常使用排序</i></header>
+      <ol class="bio2__tools">
+        <li><span class="bio2__tn">01</span><b>Codex</b><i>读写自己的流程：把重复的节点操作写成脚本与模板</i></li>
+        <li><span class="bio2__tn">02</span><b>DeepSeek Harness</b><i>用它驱动整套产出：批量出图、批量改版、批量验收</i></li>
+        <li><span class="bio2__tn">03</span><b>Photoshop</b><i>成片精修、版式拼贴、色彩与质感收口</i></li>
+        <li><span class="bio2__tn">04</span><b>ArcGIS</b><i>空间数据与图层逻辑——我判断画面结构的底子</i></li>
+      </ol>
+    </section>
+
+    <blockquote class="bio2__quote">
+      数据、参数、验收，三件事写死，剩下的才是审美。
+    </blockquote>
+  </div>
+</div>
+</div><div data-w-id="d9b97305-ff86-510a-5549-711d93bf6273"></div><div id="works" class="content-effect _01">
+<header class="secx__head">
+  <div class="secx__label">02 ／ 图集</div>
+  <div class="secx__meta">85 张 ／ 6 个方向</div>
+</header>
+<h2 class="secx__title">图像是可以被拆解的</h2>
+<p class="secx__lead">六个方向，同一条产线。点开任意一类，这个方向的所有图集铺开看。</p>
+<div class="pf" id="catgrid"></div>
+</div>
+<div data-w-id="05297b9e-94fc-2baa-36f0-90a27cb0a5d5"></div><div id="motion" class="content-effect _03">
+<header class="secx__head">
+  <div class="secx__label">03 ／ 视频</div>
+  <div class="secx__meta">5 段 ／ 共 2 分 03 秒</div>
+</header>
+<h2 class="secx__title">让它动起来</h2>
+<p class="secx__lead">五段片子跑同一条产线：角色设定 → 关键帧 → 镜头。脸、衣服、配色在资产阶段就锁死，镜头只是把它展开；横屏那条多一步，拆角色、搭场景。</p>
+
+<section class="flow" aria-label="横屏视频的制作思路">
+  <header class="flow__head">
+    <span class="flow__k">制作思路 ／ 横屏那条</span>
+    <h3 class="flow__t">从一张四人同框，到一条横屏成片</h3>
+    <p class="flow__intro">这条横屏不是一次生成的：先把人从合照里拆成 4 张角色设定，再按角色反推 2 套场景，最后把角色、场景和原图的构图一起合进镜头。每一步都留下可复用的资产，下次换题材，接着往下跑就行。</p>
+  </header>
+  <ol class="flow__list">
+    <li class="flow__step">
+      <span class="flow__rail" aria-hidden="true"><i>01</i></span>
+      <div class="flow__side">
+        <b>四人同框</b>
+        <p>四个人在同一张图里，站位、身高差、服装方向已经对好。这张不直接拿去生成，只当「关系图」读：谁挨着谁、谁高谁低、视线朝哪、整体是什么氛围。</p>
+        <p>真正被带走的是关系，不是像素——后面出角色、出场景、出镜头，都以它为准。</p>
+        <div class="flow__chips"><span>站位关系</span><span>身高差</span><span>配色基调</span></div>
+      </div>
+      <div class="flow__media flow__media--one">
+        <figure class="flow__cell"><div class="flow__ph"><img src="assets/img/flow-7-group.jpg" alt="参考图 07 四人同框" loading="lazy"/></div><figcaption>参考图 07 · 四人同框</figcaption></figure>
+        <div class="flow__note flow__note--cards">
+          <span class="flow__noteK">从这张图里拆出</span>
+          <ul>
+            <li><b>4</b><span>张角色设定：两男两女，服装、发色、配饰各自分开</span></li>
+            <li><b>2</b><span>套场景：婚纱店与礼堂，色系跟着角色走</span></li>
+            <li><b>1</b><span>条 16:9 横屏：站位沿用原图，镜头重新排</span></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="flow__step">
+      <span class="flow__rail" aria-hidden="true"><i>02</i></span>
+      <div class="flow__side">
+        <b>角色参考 1–4</b>
+        <p>四个人的形象是分开定稿的：各自单独画成一张干净的设定图，去掉背景，统一光位和站姿，只保留脸型、发型、发色、服装版型和配色。</p>
+        <p>四张「身份卡」按服装分得清——深蓝礼服、白纱长裙、红发鱼尾、黑色西装。定死之后换姿态、换场景、换镜头，人还是这个人。</p>
+        <div class="flow__chips"><span>五官与发型固定</span><span>服装配色固定</span><span>白底全身</span><span>同一光位</span></div>
+      </div>
+      <div class="flow__media flow__media--four">
+        <figure class="flow__cell"><div class="flow__ph"><img src="assets/img/flow-char-1.jpg" alt="角色参考 1 深蓝礼服" loading="lazy"/></div><figcaption>角色 01 · 深蓝礼服</figcaption></figure>
+        <figure class="flow__cell"><div class="flow__ph"><img src="assets/img/flow-char-2.jpg" alt="角色参考 2 白纱长裙" loading="lazy"/></div><figcaption>角色 02 · 白纱长裙</figcaption></figure>
+        <figure class="flow__cell"><div class="flow__ph"><img src="assets/img/flow-char-3.jpg" alt="角色参考 3 红发鱼尾" loading="lazy"/></div><figcaption>角色 03 · 红发鱼尾</figcaption></figure>
+        <figure class="flow__cell"><div class="flow__ph"><img src="assets/img/flow-char-4.jpg" alt="角色参考 4 黑色西装" loading="lazy"/></div><figcaption>角色 04 · 黑色西装</figcaption></figure>
+      </div>
+    </li>
+    <li class="flow__step">
+      <span class="flow__rail" aria-hidden="true"><i>03</i></span>
+      <div class="flow__side">
+        <b>场景参考 5–6</b>
+        <p>场景不是凭空写的，是照着角色反推的：两位新娘对应婚纱店与礼堂两个空间，白纱、花艺、吊灯、地毯的颜色都跟角色服装的色系对应。</p>
+        <p>先出空景，再让人物站进去——人景分开做，才不会互相抢光、抢色。</p>
+        <div class="flow__chips"><span>先空景后人物</span><span>与服装同色系</span><span>光位统一</span></div>
+      </div>
+      <div class="flow__media flow__media--two">
+        <figure class="flow__cell"><div class="flow__ph"><img src="assets/img/flow-scene-5.jpg" alt="场景参考 5 婚纱店" loading="lazy"/></div><figcaption>场景 05 · 满墙白纱</figcaption></figure>
+        <figure class="flow__cell"><div class="flow__ph"><img src="assets/img/flow-scene-6.jpg" alt="场景参考 6 礼堂" loading="lazy"/></div><figcaption>场景 06 · 粉色礼堂</figcaption></figure>
+      </div>
+    </li>
+    <li class="flow__step">
+      <span class="flow__rail" aria-hidden="true"><i>04</i></span>
+      <div class="flow__side">
+        <b>横屏成片</b>
+        <p>把 4 张角色卡、2 张场景卡和参考图 07 的构图喂进同一条流程，顺序是：定构图 → 排站位 → 出关键帧 → 生成镜头。</p>
+        <p>成片 16:9，站位和原图对得上，衣服、发色在多人镜头里保持一致——不换脸、不换装。</p>
+        <div class="flow__chips"><span>构图对齐 07</span><span>多人一致性</span><span>16:9</span></div>
+      </div>
+      <div class="flow__media flow__media--wide">
+        <figure class="flow__cell">
+          <div class="flow__ph flow__ph--video">
+            <figure class="film4 film4--landscape" data-film="assets/video/reel-wedding.mp4" data-orient="landscape">
+              <video poster="assets/img/poster-reel-wedding.jpg" muted loop playsinline preload="none" src="assets/video/reel-wedding.mp4"></video>
+            </figure>
+          </div>
+          <figcaption>成片 · 点开看完整片段</figcaption>
+        </figure>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<div class="films4__head"><span>竖屏成片</span><em>4 条 ／ 一条挨一条，不错位</em></div>
+<div class="films4__stack">
+    <figure class="film4 film4--portrait" data-film="assets/video/reel-fit.mp4" data-orient="portrait">
+      <video poster="assets/img/poster-reel-fit.jpg" muted loop playsinline preload="none" src="assets/video/reel-fit.mp4"></video>
+    </figure>
+    <figure class="film4 film4--portrait" data-film="assets/video/reel-dance.mp4" data-orient="portrait">
+      <video poster="assets/img/poster-reel-dance.jpg" muted loop playsinline preload="none" src="assets/video/reel-dance.mp4"></video>
+    </figure>
+    <figure class="film4 film4--portrait" data-film="assets/video/reel-date.mp4" data-orient="portrait">
+      <video poster="assets/img/poster-reel-date.jpg" muted loop playsinline preload="none" src="assets/video/reel-date.mp4"></video>
+    </figure>
+    <figure class="film4 film4--portrait" data-film="assets/video/reel-feixue.mp4" data-orient="portrait">
+      <video poster="assets/img/poster-reel-feixue.jpg" muted loop playsinline preload="none" src="assets/video/reel-feixue.mp4"></video>
+    </figure></div>
+</div><div data-w-id="9b9b42bd-15e6-9a49-6d70-f230a6b0bef0"><div data-w-id="e12ade5c-94af-493e-64ec-2022334883fa"></div><div id="lora" class="content-effect _04">
+<header class="secx__head">
+  <div class="secx__label">04 ／ LoRA 训练</div>
+  <div class="secx__meta">3 个模型 ／ 在线查看模型</div>
+</header>
+<h2 class="secx__title">LoRA 是怎么练出来的</h2>
+<p class="secx__lead">50 张水彩、6000 步，练出一个画水彩的模型；50 张版画、3000 步，练出套色和刀痕；40 张非遗服饰配版型、纹样、配色标注，3000 步练成图生图编辑。底模、步数、数据量和许可都记在卡片上，点「在线查看模型」能看权重和示例图。</p>
+
+
+
+<article class="lm">
+  <header class="lm__head">
+    <span class="lm__no">01</span>
+    <h3 class="lm__title">水彩手绘</h3>
+    <i class="lm__code">WATERCOLOR · KREA 2</i>
+    <a class="lm__btn" href="https://www.modelscope.cn/aigc/models/ykf122945dcz/Shuicai_Shouhui_Krea2_Lora" target="_blank" rel="noopener">在线查看模型 ↗</a>
+  </header>
+  <div class="lm__grid">
+    <figure class="lm__media">
+      <img src="assets/img/lora-shuicai-main.jpg" alt="水彩手绘 LoRA 效果预览" loading="lazy">
+      
+    </figure>
+    <div class="lm__body">
+      <p class="lm__lede">纸纹、晕染、留白——水彩的笔触走向能被稳定复现，换题材也不跑味。</p>
+      <dl class="lm__spec">
+        <div class="wide"><dt>BASE MODEL</dt><dd>krea/Krea-2-Turbo</dd></div>
+        <div><dt>MODEL TYPE</dt><dd>LoRA</dd></div>
+        <div><dt>TASK</dt><dd>文生图</dd></div>
+        <div><dt>SUB VISION</dt><dd>KREA_2_TURBO</dd></div>
+        <div><dt>DATASET</dt><dd>50 张</dd></div>
+        <div><dt>STEPS</dt><dd>6,000</dd></div>
+        <div><dt>TRAINER</dt><dd>DiffSynth-Studio</dd></div>
+        <div><dt>LICENSE</dt><dd>Apache-2.0</dd></div>
+        <div><dt>TRIGGER</dt><dd>无</dd></div>
+        <div><dt>AUTHOR</dt><dd>ykf122945dcz</dd></div>
+        <div class="wide"><dt>MODEL ID</dt><dd>ykf122945dcz/Shuicai_Shouhui_Krea2_Lora</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="lm__stripwrap">
+    <div class="lm__stripcap"><span class="lm__tagline"><b>KREA 2</b><i>效果预览</i></span><span>示例 10 张</span></div>
+    <div class="lm__strip" data-dir="right"><div class="lm__track"><img src="assets/img/lora-shuicai-t01.jpg" alt="" loading="lazy"><img src="assets/img/lora-shuicai-t02.jpg" alt="" loading="lazy"><img src="assets/img/lora-shuicai-t03.jpg" alt="" loading="lazy"><img src="assets/img/lora-shuicai-t04.jpg" alt="" loading="lazy"><img src="assets/img/lora-shuicai-t05.jpg" alt="" loading="lazy"><img src="assets/img/lora-shuicai-t06.jpg" alt="" loading="lazy"><img src="assets/img/lora-shuicai-t07.jpg" alt="" loading="lazy"><img src="assets/img/lora-shuicai-t08.jpg" alt="" loading="lazy"><img src="assets/img/lora-shuicai-t09.jpg" alt="" loading="lazy"><img src="assets/img/lora-shuicai-t10.jpg" alt="" loading="lazy"></div></div>
+  </div>
+</article>
+
+<article class="lm">
+  <header class="lm__head">
+    <span class="lm__no">02</span>
+    <h3 class="lm__title">版画</h3>
+    <i class="lm__code">PRINT · KREA 2</i>
+    <a class="lm__btn" href="https://www.modelscope.cn/aigc/models/ykf122945dcz/Banhua_Krea2_Lora" target="_blank" rel="noopener">在线查看模型 ↗</a>
+  </header>
+  <div class="lm__grid">
+    <figure class="lm__media">
+      <img src="assets/img/lora-banhua-1.png" alt="版画 LoRA 效果预览" loading="lazy">
+      
+    </figure>
+    <div class="lm__body">
+      <p class="lm__lede">硬边、套色、刀痕——版画的质感是结构性的，风格先立住，细节才有地方落。</p>
+      <dl class="lm__spec">
+        <div class="wide"><dt>BASE MODEL</dt><dd>krea/Krea-2-Turbo</dd></div>
+        <div><dt>MODEL TYPE</dt><dd>LoRA</dd></div>
+        <div><dt>TASK</dt><dd>文生图</dd></div>
+        <div><dt>SUB VISION</dt><dd>KREA_2_TURBO</dd></div>
+        <div><dt>DATASET</dt><dd>50 张</dd></div>
+        <div><dt>STEPS</dt><dd>3,000</dd></div>
+        <div><dt>TRAINER</dt><dd>DiffSynth-Studio</dd></div>
+        <div><dt>LICENSE</dt><dd>Apache-2.0</dd></div>
+        <div><dt>TRIGGER</dt><dd>无</dd></div>
+        <div><dt>AUTHOR</dt><dd>ykf122945dcz</dd></div>
+        <div class="wide"><dt>MODEL ID</dt><dd>ykf122945dcz/Banhua_Krea2_Lora</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="lm__stripwrap">
+    <div class="lm__stripcap"><span class="lm__tagline"><b>KREA 2</b><i>效果预览</i></span><span>示例 10 张</span></div>
+    <div class="lm__strip" data-dir="left"><div class="lm__track"><img src="assets/img/lora-banhua-t01.jpg" alt="" loading="lazy"><img src="assets/img/lora-banhua-t02.jpg" alt="" loading="lazy"><img src="assets/img/lora-banhua-t03.jpg" alt="" loading="lazy"><img src="assets/img/lora-banhua-t04.jpg" alt="" loading="lazy"><img src="assets/img/lora-banhua-t05.jpg" alt="" loading="lazy"><img src="assets/img/lora-banhua-t06.jpg" alt="" loading="lazy"><img src="assets/img/lora-banhua-t07.jpg" alt="" loading="lazy"><img src="assets/img/lora-banhua-t08.jpg" alt="" loading="lazy"><img src="assets/img/lora-banhua-t09.jpg" alt="" loading="lazy"><img src="assets/img/lora-banhua-t10.jpg" alt="" loading="lazy"></div></div>
+  </div>
+</article>
+
+<article class="lm">
+  <header class="lm__head">
+    <span class="lm__no">03</span>
+    <h3 class="lm__title">非遗服饰</h3>
+    <i class="lm__code">HERITAGE COSTUME · QWEN IMAGE EDIT</i>
+    <a class="lm__btn" href="https://www.modelscope.cn/aigc/models/ykf122945dcz/FeiyiFushi_Qwen_Lora" target="_blank" rel="noopener">在线查看模型 ↗</a>
+  </header>
+  <div class="lm__grid">
+    <figure class="lm__media">
+      <img src="assets/img/lora-feiyi-main.jpg" alt="非遗服饰 LoRA 效果预览" loading="lazy">
+      
+    </figure>
+    <div class="lm__body">
+      <p class="lm__lede">版型、纹样、配色跟着角色走——换场景、换姿势，衣服还是那件衣服。</p>
+      <dl class="lm__spec">
+        <div class="wide"><dt>BASE MODEL</dt><dd>Qwen/Qwen-Image-Edit-2511</dd></div>
+        <div><dt>MODEL TYPE</dt><dd>LoRA</dd></div>
+        <div><dt>TASK</dt><dd>图生图编辑</dd></div>
+        <div><dt>SUB VISION</dt><dd>QWEN_IMAGE_EDIT_2511</dd></div>
+        <div><dt>DATASET</dt><dd>40 张</dd></div>
+        <div><dt>STEPS</dt><dd>3,000</dd></div>
+        <div><dt>TRAINER</dt><dd>DiffSynth-Studio</dd></div>
+        <div><dt>LICENSE</dt><dd>Apache-2.0</dd></div>
+        <div><dt>TRIGGER</dt><dd>无</dd></div>
+        <div><dt>AUTHOR</dt><dd>ykf122945dcz</dd></div>
+        <div class="wide"><dt>MODEL ID</dt><dd>ykf122945dcz/FeiyiFushi_Qwen_Lora</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="lm__stripwrap">
+    <div class="lm__stripcap"><span class="lm__tagline"><b>QWEN EDIT</b><i>效果预览</i></span><span>示例 10 张</span></div>
+    <div class="lm__strip" data-dir="right"><div class="lm__track"><img src="assets/img/heritage-1.jpg" alt="" loading="lazy"><img src="assets/img/heritage-2.jpg" alt="" loading="lazy"><img src="assets/img/heritage-3.jpg" alt="" loading="lazy"><img src="assets/img/heritage-4.jpg" alt="" loading="lazy"><img src="assets/img/heritage-5.jpg" alt="" loading="lazy"><img src="assets/img/heritage-6.jpg" alt="" loading="lazy"><img src="assets/img/heritage-7.jpg" alt="" loading="lazy"><img src="assets/img/heritage-8.jpg" alt="" loading="lazy"><img src="assets/img/heritage-9.jpg" alt="" loading="lazy"><img src="assets/img/heritage-10.jpg" alt="" loading="lazy"></div></div>
+  </div>
+</article>
+</div><div data-w-id="03a8aa71-00e5-6071-081d-68ddfeac844f"></div></div><div data-w-id="a1c85255-1cb9-3f59-8d3a-5d017ccef351"></div><div id="comfyui" class="content-effect _06">
+<div class="secx">
+  <header class="secx__head">
+    <div class="secx__label">05 ／ ComfyUI</div>
+    <div class="secx__meta">4 个在线工作流</div>
+  </header>
+  <h2 class="secx__title">流程是可以被复用的</h2>
+  <p class="secx__lead">四套跑在 RunningHub 上的工作流——三套负责图片处理、一套负责文生图。节点和参数都固定好了，点「在线查看工作流」进运行页，带自己的图就能跑。</p>
+  
+  <div class="wfs">
+    <article class="wf">
+      <div class="wf__body">
+        <span class="wf__tag">图片放大</span>
+        <h3>动漫放大 · Upscale</h3>
+        <p>二次元／cartoon 图一键放大，线条和脸都不糊，出图能直接接着用。</p>
+        <div class="wf__chips"><span>动漫 · 二次元 · cartoon</span><span>Lite · Plus · Ultra</span><span>批量放大</span></div>
+        <div class="wf__actions"><a href="https://www.runninghub.cn/workflow/2122090201991442434?source=workspace" target="_blank" rel="noopener" class="wf__btn">在线查看工作流 ↗</a></div>
+      </div>
+      <div class="wf__media wf__media--compare">
+        <div class="wf__cmp-wrap">
+          <div class="wf__compare" data-compare>
+            <img class="wf__cmp-a" src="assets/img/comfy-1-before.jpg" alt="参考图" loading="lazy">
+            <img class="wf__cmp-b" src="assets/img/comfy-1-after.jpg" alt="放大" loading="lazy">
+            <span class="wf__cmp-handle" role="slider" aria-label="拖动对比原图与放大">↔</span>
+          </div>
+          <div class="wf__cmp-caption">
+            <div><b>参考图</b></div>
+            <div><b>放大</b></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="wf">
+      <div class="wf__body">
+        <span class="wf__tag">风格转绘</span>
+        <h3>Qwen-Image-Edit · 一键转宫崎骏风</h3>
+        <p>上传一张人像，整张转成宫崎骏动画的配色和笔触，人物特征保留。</p>
+        <div class="wf__chips"><span>Qwen-Image-Edit 2511</span><span>宫崎骏风</span><span>一键转绘</span></div>
+        <div class="wf__actions"><a href="https://www.runninghub.cn/workflow/2122044809585188865?source=workspace" target="_blank" rel="noopener" class="wf__btn">在线查看工作流 ↗</a></div>
+      </div>
+      <div class="wf__media wf__media--compare">
+        <div class="wf__cmp-wrap">
+          <div class="wf__compare" data-compare>
+            <img class="wf__cmp-a" src="assets/img/comfy-2-before.jpg" alt="参考图" loading="lazy">
+            <img class="wf__cmp-b" src="assets/img/comfy-2-after.jpg" alt="宫崎骏风" loading="lazy">
+            <span class="wf__cmp-handle" role="slider" aria-label="拖动对比原图与宫崎骏风">↔</span>
+          </div>
+          <div class="wf__cmp-caption">
+            <div><b>参考图</b></div>
+            <div><b>宫崎骏风</b></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="wf">
+      <div class="wf__body">
+        <span class="wf__tag">图片修复</span>
+        <h3>MOSS 洗图 · 2K 极速版</h3>
+        <p>糊图、噪点和压缩痕迹一并洗掉，出 2K 干净图，二次修复也好用。</p>
+        <div class="wf__chips"><span>MOSS 图生图</span><span>一键洗图</span><span>2K 极速</span></div>
+        <div class="wf__actions"><a href="https://www.runninghub.cn/workflow/2122069588325257217?source=workspace" target="_blank" rel="noopener" class="wf__btn">在线查看工作流 ↗</a></div>
+      </div>
+      <div class="wf__media wf__media--compare">
+        <div class="wf__cmp-wrap">
+          <div class="wf__compare" data-compare>
+            <img class="wf__cmp-a" src="assets/img/comfy-3-before.jpg" alt="参考图" loading="lazy">
+            <img class="wf__cmp-b" src="assets/img/comfy-3-after.jpg" alt="洗图后" loading="lazy">
+            <span class="wf__cmp-handle" role="slider" aria-label="拖动对比原图与洗图后">↔</span>
+          </div>
+          <div class="wf__cmp-caption">
+            <div><b>参考图</b></div>
+            <div><b>洗图后</b></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="wf">
+      <div class="wf__body">
+        <span class="wf__tag">文生图</span>
+        <h3>Krea2 中式华服 · 簪花美人</h3>
+        <p>Krea2 出中式华服人像：簪花、纹样、布料质感都写进提示词模板，换色换景不换人。</p>
+        <div class="wf__chips"><span>Krea2</span><span>MJCN 9500 步</span><span>中式华服</span></div>
+        <div class="wf__actions"><a href="https://www.runninghub.cn/workflow/2122089759584636930" target="_blank" rel="noopener" class="wf__btn">在线查看工作流 ↗</a></div>
+      </div>
+      <div class="wf__media wf__media--single">
+        <figure><img src="assets/img/comfy-4.jpg" alt="Krea2 中式华服文生图示例" loading="lazy"><figcaption>文生图示例</figcaption></figure>
+      </div>
+    </article>
+  </div>
+</div>
+</div><div data-w-id="6515c2c8-1564-5bf5-da63-c4faaee5df77"></div><div data-w-id="b031d7c8-7304-db85-87d0-4e4fa8886303"></div><div data-w-id="303f7865-e3ab-a398-e46e-b21982f0cbb1"></div>
+<div class="endsec content-effect" id="end">
+  <div class="endsec__bg" aria-hidden="true"></div>
+  <div class="endsec__inner">
+    <div class="endsec__eyebrow">06 ／ 结尾</div>
+    <h2 class="endsec__title" data-text="Creation">Creation</h2>
+    <div class="endsec__cols">
+      <p>一开始只是想「让图好看一点」。后来发现真正难的是：同一个角色能不能稳定地画出来，一套流程能不能交给别人跑。</p>
+      <p>现在这两件事算是跑通了，人也就松下来了——但松下来不等于到头。模型在变，题材在变，还有很多画面没被做出来。所以这片星系还得继续飞。</p>
+    </div>
+    <a href="index.html" class="endsec__back">回到起点 ↺</a>
+  </div>
+</div>
+
+<div id="contact" class="content-effect _09"><div class="footer"><div class="container"><div class="footer-grid"><div class="footer-column"><h2 class="h2 text-weight">Build it once. Build it right<span class="tm-small">™</span><br/></h2><div class="divider-s"></div><div class="flex-footer"><div class="text-footer">New Business:</div><a href="#" data-wf--button-line--variant="base" class="button-link w-inline-block"><div class="button-flex"><div class="text-overflow"><div class="navigation-text-main _01">2640167031@qq.com</div><div class="navigation-text-main _02">2640167031@qq.com</div></div><div class="line-divider"><div class="line-absolute"></div></div></div></a></div><div class="divider-s"></div><div><div class="text-footer light">Thoughtful updates, nothing more.</div></div><div class="divider-xs"></div><div><div class="footer-form w-form"><form id="Subscribe-Footer" name="wf-form-Subscribe" data-name="Subscribe" method="get" class="subscribe-form" data-wf-page-id="69d61b912d27b4a53110043c" data-wf-element-id="e80e2e73-1bfa-7773-d1f8-732ce0ccb51a"><input class="subscribe-field-main w-node-e80e2e73-1bfa-7773-d1f8-732ce0ccb51b-e0ccb503 w-input" maxlength="256" name="Subscribe" data-name="Subscribe" placeholder="E-mail" type="email" id="Subscribe" required=""/><input type="submit" data-wait="Please wait..." class="button-sbc for-sbc w-button" value="Subscribe"/></form><div class="success-message-main w-form-done"><div>Thank you for subscribing!</div></div><div class="error-message w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div><div class="divider-xs"></div><div><div class="text-footer light">© 2026 杨开发</div></div></div><div class="grid-right-footer"><div><div class="flex-footer _01"><a href="index.html" data-wf--button-line--variant="base" aria-current="page" class="button-link w-inline-block w--current"><div class="button-flex"><div class="text-overflow"><div class="navigation-text-main _01">Home</div><div class="navigation-text-main _02">Home</div></div><div class="line-divider"><div class="line-absolute"></div></div></div></a><a href="index.html#meet" data-wf--button-line--variant="base" class="button-link w-inline-block"><div class="button-flex"><div class="text-overflow"><div class="navigation-text-main _01">About</div><div class="navigation-text-main _02">About</div></div><div class="line-divider"><div class="line-absolute"></div></div></div></a><a href="work.html" data-wf--button-line--variant="base" class="button-link w-inline-block"><div class="button-flex"><div class="text-overflow"><div class="navigation-text-main _01">Work</div><div class="navigation-text-main _02">Work</div></div><div class="line-divider"><div class="line-absolute"></div></div></div></a><a href="news.html" data-wf--button-line--variant="base" class="button-link w-inline-block"><div class="button-flex"><div class="text-overflow"><div class="navigation-text-main _01">News</div><div class="navigation-text-main _02">News</div></div><div class="line-divider"><div class="line-absolute"></div></div></div></a><a href="contact.html" data-wf--button-line--variant="base" class="button-link w-inline-block"><div class="button-flex"><div class="text-overflow"><div class="navigation-text-main _01">Contact</div><div class="navigation-text-main _02">Contact</div></div><div class="line-divider"><div class="line-absolute"></div></div></div></a></div></div><div><div class="flex-footer"><div class="social-wrapper"><a href="https://x.com/" target="_blank" class="logo-testimonials rl w-inline-block"><img width="14" loading="lazy" alt="" src="assets/img/x.webp" sizes="(max-width: 991px) 14px, 1vw" srcset="assets/img/x-p-500.png 500w, assets/img/x.webp 512w"/></a><a href="https://instagram.com/" target="_blank" class="logo-testimonials rl w-inline-block"><img width="16" loading="lazy" alt="" src="assets/img/insta.png" sizes="(max-width: 767px) 16px, (max-width: 991px) 2vw, (max-width: 1919px) 16px, 1vw" srcset="assets/img/insta-p-500.png 500w, assets/img/insta.png 512w"/></a><a href="https://linkedin.com/" target="_blank" class="logo-testimonials rl w-inline-block"><img width="16" loading="lazy" alt="" src="assets/img/li.png" sizes="(max-width: 767px) 16px, (max-width: 991px) 2vw, (max-width: 1919px) 16px, 1vw" srcset="assets/img/li-p-500.png 500w, assets/img/li.png 512w"/></a></div></div></div><div class="flex-footer"><div class="text-footer light">Address:</div><div class="text-footer">杭州<br/>可远程协作</div></div></div></div><div class="divider-xl"></div><div><img width="2000" loading="lazy" alt="" src="assets/img/logo-big.png" sizes="100vw" srcset="assets/img/logo-big-p-500.png 500w, assets/img/logo-big-p-800.png 800w, assets/img/logo-big-p-1080.png 1080w, assets/img/logo-big-p-1600.png 1600w, assets/img/logo-big-p-2000.png 2000w, assets/img/logo-big-p-2600.png 2600w, assets/img/logo-big-p-3200.png 3200w, assets/img/logo-big.png 4000w" class="logo-footer"/></div></div></div></div></div><div class="transition"><div class="transition-block"></div></div><div class="plus-line-wrapper"><div class="verical-line"></div><div class="horizontal-line"></div><div class="plus-wrapper"></div></div>
+
+
+<!-- Lenis setup -->
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/SplitText.min.js"></script>
+<script src="assets/js/CustomEase.min.js"></script>
+<script src="assets/js/lenis.min.js"></script>
+<script src="assets/js/clone.js?v=56"></script><script src="assets/js/works-data.js?v=1"></script><script src="assets/js/v5.js?v=1"></script><script src="assets/js/v6.js?v=17"></script><script src="assets/js/v7-gallery.js?v=6"></script>
+<div data-w-id="bbff4991-767b-b614-f7ca-92750336a1ec" style="opacity:0" class="badge-content"><div data-w-id="bbff4991-767b-b614-f7ca-92750336a1ed" class="remove-icon"><img width="7" loading="lazy" alt="" src="assets/img/close.png"></div><a data-w-id="bbff4991-767b-b614-f7ca-92750336a1ef" href="assets/img/pricing" target="_blank" class="badge-wrapper w-inline-block"><div class="photo-badge"><video poster="assets/img/6970fd4b25986a180c7fdfd2-6ab50cd7bd8e93127ef54b92_rendere-1-_poster.0000000.jpg" playsinline="" loop="" muted="" autoplay="" class="badge-video badge-video"><source type="video/mp4" src="assets/video/6970fd4b25986a180c7fdfd2-6ab50cd7bd8e93127ef54b92_rendere-1-_mp4.mp4"><source type="video/webm" src="assets/video/6970fd4b25986a180c7fdfd2-6ab50cd7bd8e93127ef54b92_rendere-1-_webm.webm"></video></div></a></div>
+<div class="vmodal" aria-hidden="true">
+  <button class="vmodal__x" type="button" aria-label="关闭">✕</button>
+  <div class="vmodal__stage"><video controls playsinline preload="none"></video></div>
+  <span class="vmodal__src"></span>
+</div>
+
+<svg class="svg-defs" aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden">
+<defs>
+<filter id="heroRing" x="-18%" y="-24%" width="136%" height="148%" color-interpolation-filters="sRGB">
+<feMorphology in="SourceAlpha" operator="erode" radius="3" result="shrunk"/>
+<feComposite in="SourceAlpha" in2="shrunk" operator="out" result="ring"/>
+<feGaussianBlur in="ring" stdDeviation="0.35" result="ringSoft"/>
+<feFlood flood-color="#a8f6ff" result="tint"/>
+<feComposite in="tint" in2="ringSoft" operator="in" result="outline"/>
+</filter>
+</defs>
+</svg>
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false"><defs><filter id="endRing" x="-12%" y="-16%" width="124%" height="132%" color-interpolation-filters="sRGB"><feMorphology in="SourceAlpha" operator="erode" radius="9" result="shrunk"/><feComposite in="SourceAlpha" in2="shrunk" operator="out" result="ring"/><feGaussianBlur in="ring" stdDeviation="0.9"/><feFlood flood-color="#a8f6ff"/><feComposite in2="SourceAlpha" operator="in"/></filter></defs></svg>
+</body></html>
