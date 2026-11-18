@@ -1,5 +1,5 @@
 <!DOCTYPE html><!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Sun Nov 01 2026 21:32:20 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="omnerat-template.webflow.io" data-wf-page="69d61b912d27b4a53110043c" data-wf-site="69d61b912d27b4a531100460" lang="en"><head><meta charset="utf-8"/><title>Studio© — Portfolio</title><meta content="Studio© is a refined Webflow template crafted to showcase your work with clarity, structure, and intentional motion." name="description"/><meta content="Studio© - Webflow HTML website template" property="og:title"/><meta content="Studio© is a refined Webflow template crafted to showcase your work with clarity, structure, and intentional motion." property="og:description"/><meta content="https://cdn.prod.website-files.com/69d61b912d27b4a531100460/69e0c36503affcec815df52b_thumb.jpg" property="og:image"/><meta content="Studio© - Webflow HTML website template" name="twitter:title"/><meta content="Studio© is a refined Webflow template crafted to showcase your work with clarity, structure, and intentional motion." name="twitter:description"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Webflow" name="generator"/><link rel="stylesheet" href="assets/css/shared.css">
-<link rel="stylesheet" href="assets/css/clone.css?v=89"><link rel="stylesheet" href="assets/css/v5.css?v=2"><link rel="stylesheet" href="assets/css/v6.css?v=67"><link href="assets/img/logo-small.jpg" rel="shortcut icon" type="image/x-icon"/><link href="assets/img/logo.png" rel="apple-touch-icon"/>
+<link rel="stylesheet" href="assets/css/clone.css?v=89"><link rel="stylesheet" href="assets/css/v5.css?v=2"><link rel="stylesheet" href="assets/css/v6.css?v=71"><link href="assets/img/logo-small.jpg" rel="shortcut icon" type="image/x-icon"/><link href="assets/img/logo.png" rel="apple-touch-icon"/>
 
 
 
@@ -46,7 +46,7 @@
     <div class="bio2__id">
       <span class="bio2__kicker">PROFILE ／ 个人简介</span>
       <h2 class="bio2__name">杨开发</h2>
-      <p class="bio2__role">ComfyUI 工作流 ／ AI 视觉</p>
+      <p class="bio2__role">AI 角色效果（AIGC 美术） ／ ComfyUI 漫剧产线</p>
       <dl class="bio2__meta">
         <div><dt>年龄</dt><dd>24</dd></div>
         <div><dt>城市</dt><dd>杭州 · 可远程</dd></div>
@@ -60,23 +60,34 @@
     <p class="bio2__lede">我把生成式视觉当成产线来做：<em>把一次性的好结果，变成任何人接手都能复现的流程。</em></p>
 
     <section class="bio2__block">
-      <header class="bio2__bhead"><span>01 ／ 经历</span><i>2025.11 — 2026.05</i></header>
-      <h3>西安中科航遥科技有限公司 <small>AI 视觉 ／ ComfyUI 工作流</small></h3>
+      <header class="bio2__bhead"><span>01 ／ 经历</span><i>2026.02 — 2026.10</i></header>
+      <h3>贵州深擎智能 <small>AI 角色效果（AIGC 美术）</small></h3>
       <ul class="bio2__list">
-        <li><b>建线</b>把项目素材整理成训练集，训 LoRA 锁定角色与材质，替代反复外包修图；同一套节点复用到海报、版式、角色三类题材。</li>
-        <li><b>定性</b>推出「文生图 → 局部重绘 → 放大」的固定链路：模型、显存、步数、随机种子全部标注，换人也能跑出同样结果。</li>
-        <li><b>交付</b>为团队写下可交接的工作流文档，把口口相传的手感变成可培训的规范。</li>
+        <li><b>制片</b>以剧本与分镜为输入，主导 AI 漫剧画面生产：角色立绘、表情差分、场景与分镜图，交付 3 部项目的批量画面资产。</li>
+        <li><b>搭线</b>搭建 ComfyUI 漫剧产线（Flux / SDXL + ControlNet + 参考图锁定 + 换装与场景延展），把分镜到成片压成一条可复用链路，单集出图周期缩短约 40%。</li>
+        <li><b>定型</b>以 LoRA 锁定角色与画风：自建数据集（裁剪、打标、配比清洗），跨镜头不漂移，换场景仍认得出是同一角色。</li>
+        <li><b>收口</b>提示词模板、批量队列、自动命名与归档编成智能体流程，重复劳动交给流程，判断留给审美；分层 PSD、透明底 PNG 与命名规范收口交付。</li>
       </ul>
     </section>
 
     <section class="bio2__block">
-      <header class="bio2__bhead"><span>02 ／ 工具</span><i>按日常使用排序</i></header>
+      <header class="bio2__bhead"><span>02 ／ 工具</span><i>按用途分组</i></header>
+      <div class="bio2__tgroup">
+      <div class="bio2__tlabel">生图工具</div>
       <ol class="bio2__tools">
-        <li><span class="bio2__tn">01</span><b>Codex</b><i>读写自己的流程：把重复的节点操作写成脚本与模板</i></li>
-        <li><span class="bio2__tn">02</span><b>DeepSeek Harness</b><i>用它驱动整套产出：批量出图、批量改版、批量验收</i></li>
-        <li><span class="bio2__tn">03</span><b>Photoshop</b><i>成片精修、版式拼贴、色彩与质感收口</i></li>
-        <li><span class="bio2__tn">04</span><b>ArcGIS</b><i>空间数据与图层逻辑——我判断画面结构的底子</i></li>
+        <li><span class="bio2__tn">01</span><b>即梦</b><i>试构图、定光位</i></li>
+        <li><span class="bio2__tn">02</span><b>Midjourney</b><i>风格化出图，定色彩质感</i></li>
+        <li><span class="bio2__tn">03</span><b>ChatGPT</b><i>Image 2.5 模型生图</i></li>
+        <li><span class="bio2__tn">04</span><b>ComfyUI</b><i>ControlNet + LoRA 批量产线</i></li>
       </ol>
+    </div>
+    <div class="bio2__tgroup">
+      <div class="bio2__tlabel">智能体工具</div>
+      <ol class="bio2__tools">
+        <li><span class="bio2__tn">05</span><b>Codex</b><i>编写 skill、插件等扩展</i></li>
+        <li><span class="bio2__tn">06</span><b>DeepSeek Harness</b><i>文档撰写与数据处理</i></li>
+      </ol>
+    </div>
     </section>
 
     <blockquote class="bio2__quote">
